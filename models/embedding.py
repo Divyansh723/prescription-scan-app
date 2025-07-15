@@ -1,19 +1,7 @@
-import pandas as pd
 import boto3
-import faiss
-import numpy as np
 from langchain.embeddings import BedrockEmbeddings
-from langchain.vectorstores import FAISS
-from langchain.chains import RetrievalQA
-from langchain.llms import Bedrock
-from PIL import Image
-import base64
 import json
-import matplotlib.pyplot as plt
-import cv2
-from tqdm import tqdm  # For progress bar
-import os
-from concurrent.futures import ThreadPoolExecutor
+import base64
 from config import Config
 
 session = boto3.Session(
